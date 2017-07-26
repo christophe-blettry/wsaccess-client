@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<Configuration monitorInterval="30" status="WARN">
+	<Appenders>
+		<Console name="Console" target="SYSTEM_OUT">
+			<PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36}.%M - %msg%n"/>
+		</Console>
+	</Appenders>
+	<Loggers>
+		<Logger name="net.microfaas.java.wsaccess.client.WebSocketClient" level="trace" additivity="false">
+			<AppenderRef ref="Console"/>
+		</Logger>
+		<Logger name="net.microfaas.java.wsaccess.client.test.NewMain1" level="trace" additivity="false">
+			<AppenderRef ref="Console"/>
+		</Logger>
+		<Root level="debug">
+			<AppenderRef ref="Console"/>
+		</Root>
+	</Loggers>
+</Configuration>

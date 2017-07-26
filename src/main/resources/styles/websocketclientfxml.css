@@ -1,0 +1,11 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+
+}
+#headerPane {
+	-fx-background-color: blue;
+}
